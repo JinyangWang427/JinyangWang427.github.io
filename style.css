@@ -1,22 +1,25 @@
+/* Academic homepage: paper-like layout inspired by classic jemdoc pages. */
 html {
   background-color: #eeeeee;
 }
 
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  color: #000000;
   background: transparent;
+  color: #000;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 16px;
-  line-height: 1.34;
+  line-height: 1.36;
+  text-align: left;
 }
 
 #page {
-  box-sizing: border-box;
+  width: calc(100% - 40px);
   max-width: 960px;
   margin: 30px auto;
-  padding: 34px 50px 32px;
-  background: #ffffff;
+  padding: 30px 50px 34px;
+  box-sizing: border-box;
+  background: #fff;
 }
 
 a {
@@ -25,151 +28,273 @@ a {
 }
 
 a:hover {
-  border-bottom: 1px dotted #777777;
+  border-bottom: 1px dotted #777;
 }
 
 p {
-  margin: 0 0 0.8em;
-  padding: 0;
+  margin: 0 0 0.78em;
 }
 
 h1, h2, h3 {
-  color: #000000;
-  font-weight: 700;
+  color: #000;
 }
 
 #toptitle h1 {
-  margin: 0 0 10px;
+  margin: 0 0 6px;
   padding: 0;
-  border: none;
-  font-size: 1.92rem;
-  line-height: 1.08;
+  border: 0;
+  font-size: 1.88rem;
+  line-height: 1.05;
 }
 
 .cn {
-  font-size: 0.84em;
+  font-size: 0.82em;
   font-weight: 600;
 }
 
 h2 {
-  margin: 20px 0 10px;
-  padding: 0 0 4px;
-  border-bottom: 1px solid #aaaaaa;
-  font-size: 1.25rem;
-  line-height: 1.05;
+  margin: 22px 0 10px;
+  padding: 0 0 5px;
+  border-bottom: 1px solid #aaa;
+  font-size: 1.27rem;
+  line-height: 1.08;
 }
 
 h3 {
-  margin: 0 0 8px;
-  padding: 0;
-  font-size: 1.04rem;
+  margin: 0 0 7px;
+  font-size: 1.02rem;
   line-height: 1.2;
 }
 
-.top-table {
+.profile-table {
   width: 100%;
-  border: 0;
   border-collapse: collapse;
   table-layout: fixed;
 }
 
-.top-table td {
+.profile-table td {
   border: 0;
   vertical-align: top;
   padding: 0;
 }
 
-.top-info {
-  width: auto;
-  padding-right: 34px !important;
+.profile-main {
+  padding-right: 38px !important;
 }
 
-.top-photo {
-  width: 200px;
+.profile-photo-cell {
+  width: 172px;
   text-align: right;
 }
 
-.top-photo img {
-  width: 190px;
-  height: 190px;
-  object-fit: cover;
-  border: 0;
+.profile-photo-cell img {
   display: block;
+  width: 158px;
+  height: auto;
   margin-left: auto;
+  border: 0;
 }
 
 .news-box {
-  max-height: 130px;
+  max-height: 126px;
   overflow-y: auto;
-  padding: 8px 12px;
+  padding: 7px 12px;
+  margin-bottom: 5px;
   border-left: 4px solid #2c3e50;
   background: #fafafa;
 }
 
 .news-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .news-list li {
-  margin: 0.25em 0;
-}
-
-ul {
-  margin: 0.25em 0 0.9em;
-  padding-left: 1.35em;
-}
-
-li {
-  margin: 0.45em 0;
+  margin: 0.28em 0;
 }
 
 .publication {
-  margin: 0 0 16px;
-  padding: 0;
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  column-gap: 14px;
+  margin: 2px 0 18px;
 }
 
-.publication p {
-  margin-bottom: 0.38em;
+.pub-year {
+  padding-top: 2px;
+  color: #555;
+  font-style: italic;
+}
+
+.pub-body p {
+  margin-bottom: 0.34em;
 }
 
 .paper-title {
   font-size: 1.02rem;
-  line-height: 1.35;
+  line-height: 1.33;
+}
+
+.paper-links {
+  margin-top: 4px;
+}
+
+.entry-card {
+  position: relative;
+  margin: 0 0 13px;
+  padding: 10px 14px 10px 16px;
+  border: 1px solid #e1e4e8;
+  border-left: 4px solid #2c3e50;
+  border-radius: 5px;
+  background: #fbfbfb;
+}
+
+.entry-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 3px;
+}
+
+.entry-title {
+  color: #111;
+}
+
+.entry-date {
+  flex: 0 0 auto;
+  color: #fff;
+  background: #2c3e50;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-family: "Menlo", "Consolas", monospace;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.entry-sub {
+  margin: 0 0 4px;
+  color: #555;
+  font-style: italic;
+}
+
+.entry-card ul,
+.project-list,
+.honor-list {
+  margin: 0.28em 0 0.45em;
+  padding-left: 1.35em;
+}
+
+.entry-card li,
+.project-list li,
+.honor-list li {
+  margin: 0.36em 0;
+}
+
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.edu-table td {
+  padding: 5px 0 9px;
+  vertical-align: top;
+  border: 0;
+}
+
+.date-col {
+  width: 135px;
+  padding-left: 20px !important;
+  text-align: right;
+  white-space: nowrap;
+  color: #555;
 }
 
 #footer {
-  margin-top: 38px;
+  margin-top: 36px;
   padding-top: 7px;
   border-top: 1px solid #c0c0c0;
-  color: #aaaaaa;
+  color: #aaa;
   font-size: 0.82rem;
 }
 
 @media (max-width: 700px) {
-  html { background: #ffffff; }
+  html { background-color: #fff; }
+
   #page {
+    width: 100%;
     margin: 0;
     padding: 24px 20px 30px;
-    max-width: none;
   }
-  .top-table,
-  .top-table tbody,
-  .top-table tr,
-  .top-table td {
+
+  .profile-table,
+  .profile-table tbody,
+  .profile-table tr,
+  .profile-table td {
     display: block;
     width: 100%;
   }
-  .top-info { padding-right: 0 !important; }
-  .top-photo {
-    text-align: left;
-    margin-top: 14px;
+
+  .profile-main {
+    padding-right: 0 !important;
   }
-  .top-photo img {
-    width: 160px;
-    height: 160px;
+
+  .profile-photo-cell {
+    margin-top: 13px;
+    text-align: left;
+  }
+
+  .profile-photo-cell img {
+    width: 140px;
     margin: 0;
   }
-  #toptitle h1 { font-size: 1.75rem; }
+
+  .publication {
+    grid-template-columns: 1fr;
+    row-gap: 2px;
+  }
+
+  .pub-year {
+    margin-bottom: 4px;
+  }
+
+  .entry-head {
+    display: block;
+  }
+
+  .entry-date {
+    display: inline-block;
+    margin-top: 5px;
+  }
+
+  .edu-table,
+  .edu-table tbody,
+  .edu-table tr,
+  .edu-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .date-col {
+    padding: 0 0 9px !important;
+    text-align: left;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html, body { background: #fff; }
+  #page {
+    width: 210mm;
+    max-width: none;
+    margin: 0;
+    padding: 14mm 16mm;
+  }
+  h2 { break-after: avoid; }
+  .entry-card, .publication, .edu-table tr { break-inside: avoid; }
 }
