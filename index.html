@@ -4,12 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jinyang Wang (王金阳)</title>
-  <meta name="description" content="Jinyang Wang's academic homepage. Research interests include autonomous driving, world models, world-action models, embodied AI, and 3D vision.">
-  <meta name="keywords" content="Jinyang Wang, 王金阳, SV-WAM, autonomous driving, world models, world action model, embodied AI, computer vision, CASIA">
+  <meta name="description" content="Jinyang Wang's academic homepage. Research on autonomous driving, world models, world-action models, embodied AI, and 3D vision.">
+  <meta name="keywords" content="Jinyang Wang, 王金阳, SV-WAM, autonomous driving, world model, world action model, embodied AI, computer vision, CASIA">
   <meta name="author" content="Jinyang Wang">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://jinyangwang427.github.io/">
   <link rel="stylesheet" href="style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jinyang Wang (王金阳)">
+  <meta property="og:description" content="Academic homepage of Jinyang Wang — Autonomous Driving, World Models, Embodied AI, and 3D Vision.">
+  <meta property="og:url" content="https://jinyangwang427.github.io/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/185165899?v=4">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -17,92 +22,73 @@
     "name": "Jinyang Wang",
     "alternateName": "王金阳",
     "url": "https://jinyangwang427.github.io/",
+    "image": "https://avatars.githubusercontent.com/u/185165899?v=4",
     "email": "mailto:wangjinyang25@mails.ucas.ac.cn",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "Institute of Automation, Chinese Academy of Sciences"
-    },
-    "sameAs": [
-      "https://github.com/JinyangWang427",
-      "https://arxiv.org/abs/2609.03602"
-    ]
+    "affiliation": {"@type":"Organization","name":"Institute of Automation, Chinese Academy of Sciences"},
+    "sameAs": ["https://github.com/JinyangWang427", "https://arxiv.org/abs/2609.03602"],
+    "knowsAbout": ["Autonomous Driving", "World Models", "World-Action Models", "Embodied AI", "3D Vision"]
   }
   </script>
 </head>
 <body>
+<div id="page">
+  <table class="top-table" role="presentation">
+    <tr>
+      <td class="top-info">
+        <div id="toptitle"><h1>Jinyang Wang <span class="cn">(王金阳)</span></h1></div>
+        <h3>Master's Student</h3>
+        <p>
+          Institute of Automation, Chinese Academy of Sciences (CASIA)<br>
+          Email: <a href="mailto:wangjinyang25@mails.ucas.ac.cn">wangjinyang25@mails.ucas.ac.cn</a><br>
+          <a href="https://github.com/JinyangWang427" target="_blank" rel="noopener">[GitHub]</a>
+          <a href="https://arxiv.org/abs/2609.03602" target="_blank" rel="noopener">[arXiv]</a>
+        </p>
+      </td>
+      <td class="top-photo">
+        <img src="https://avatars.githubusercontent.com/u/185165899?v=4" alt="Portrait of Jinyang Wang">
+      </td>
+    </tr>
+  </table>
 
-<table class="profile-table">
-  <tr>
-    <td class="profile-info">
-      <h1>Jinyang Wang (王金阳)</h1>
-      <h3>Master's Student</h3>
-      <p>
-        Institute of Automation, Chinese Academy of Sciences (CASIA)<br>
-        Email: <a href="mailto:wangjinyang25@mails.ucas.ac.cn">wangjinyang25@mails.ucas.ac.cn</a><br>
-        <a href="https://github.com/JinyangWang427" target="_blank" rel="noopener">[GitHub]</a>
-        <a href="https://arxiv.org/abs/2609.03602" target="_blank" rel="noopener">[arXiv]</a>
-      </p>
-    </td>
-    <td class="profile-photo-cell">
-      <img src="https://avatars.githubusercontent.com/u/185165899?v=4" alt="Jinyang Wang" class="profile-photo">
-    </td>
-  </tr>
-</table>
+  <h2>Short Bio</h2>
+  <p>
+    I am currently a Master's student at the <strong>Institute of Automation, Chinese Academy of Sciences (CASIA)</strong>.
+    My research interests include <strong>Autonomous Driving</strong>, <strong>World Models</strong>,
+    <strong>World-Action Models</strong>, <strong>Embodied AI</strong>, and <strong>3D Vision</strong>.
+    I am interested in efficient visual world modeling for perception, prediction, and decision-making in complex environments.
+  </p>
 
-<h2>Short Bio</h2>
-<p>
-  I am currently a Master's student at the <strong>Institute of Automation, Chinese Academy of Sciences</strong>.
-  My research focuses on <strong>Autonomous Driving</strong>, <strong>World Models</strong>,
-  <strong>World-Action Models</strong>, <strong>Embodied AI</strong>, and <strong>3D Vision</strong>.
-  I am particularly interested in efficient visual world modeling for perception, prediction, and decision making in complex driving environments.
-</p>
+  <h2>News</h2>
+  <div class="news-box">
+    <ul class="news-list">
+      <li><em>2026.09:</em> Our work <strong>SV-WAM</strong> is available on arXiv.</li>
+    </ul>
+  </div>
 
-<h2>News</h2>
-<div class="news-box">
-  <ul class="plain-list">
-    <li><em>2026.09:</em> Our work <strong>SV-WAM</strong> is now available on arXiv.</li>
+  <h2>Publications</h2>
+  <div class="publication">
+    <p class="paper-title"><strong>SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving</strong></p>
+    <p><strong>Jinyang Wang</strong>, Shiwei Li, Junjian Wang, et al.</p>
+    <p><em>arXiv, 2026.</em></p>
+    <p>
+      An efficient surround-view world-action model that preserves full six-camera observations while leveraging future-video prediction as training supervision, enabling efficient action-only planning without future-video rollout at inference.
+    </p>
+    <p><a href="https://arxiv.org/abs/2609.03602" target="_blank" rel="noopener">[Paper]</a></p>
+  </div>
+
+  <h2>Internship</h2>
+  <ul>
+    <li><strong>Algorithm Intern, Changan Auto</strong> — Automotive AI and autonomous driving.</li>
   </ul>
+
+  <h2>Education</h2>
+  <ul>
+    <li><strong>Institute of Automation, Chinese Academy of Sciences</strong> — Master's Student.</li>
+  </ul>
+
+  <div id="footer">
+    <div id="footer-text">Last updated: September 2026</div>
+  </div>
 </div>
-
-<h2>Research Interests</h2>
-<p>Autonomous Driving &nbsp;·&nbsp; World Models &nbsp;·&nbsp; World-Action Models &nbsp;·&nbsp; Embodied AI &nbsp;·&nbsp; 3D Vision</p>
-
-<h2>Publications</h2>
-<table class="pub-table">
-  <tr>
-    <td class="pub-image-cell">
-      <div class="paper-placeholder">
-        <div class="camera-row"><span>FL</span><span>F</span><span>FR</span></div>
-        <div class="camera-row"><span>BL</span><span>B</span><span>BR</span></div>
-        <div class="paper-flow">Surround View → <strong>SV-WAM</strong> → Action</div>
-      </div>
-    </td>
-    <td class="pub-text-cell">
-      <p class="pub-title"><strong>SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving</strong></p>
-      <p><strong>Jinyang Wang</strong>, Shiwei Li, Junjian Wang, et al.</p>
-      <p><em>arXiv, 2026</em></p>
-      <p>
-        An efficient surround-view world-action model that preserves full six-camera observations while leveraging future-video prediction as training supervision, enabling efficient action-only planning without future-video rollout at inference.
-      </p>
-      <p><a href="https://arxiv.org/abs/2609.03602" target="_blank" rel="noopener">[Paper]</a></p>
-    </td>
-  </tr>
-</table>
-
-<h2>Experience</h2>
-<ul>
-  <li><strong>Institute of Automation, Chinese Academy of Sciences</strong> — Master's Student.</li>
-  <li><strong>Automotive AI Research</strong> — Research and engineering experience in learning-based autonomous driving.</li>
-</ul>
-
-<h2>Education</h2>
-<ul>
-  <li><strong>Chinese Academy of Sciences</strong> — Master's study in computer vision and autonomous driving.</li>
-</ul>
-
-<div class="footer">
-  Last updated: September 2026
-</div>
-
 </body>
 </html>
