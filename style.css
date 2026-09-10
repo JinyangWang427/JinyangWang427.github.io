@@ -1,18 +1,22 @@
 html {
-  background: #eeeeee;
+  background-color: #eeeeee;
 }
 
 body {
+  margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  color: #111111;
-  background: #ffffff;
-  text-align: left;
-  margin: 30px auto;
-  padding: 18px 50px 32px;
-  max-width: 960px;
-  box-sizing: border-box;
+  color: #000000;
+  background: transparent;
   font-size: 16px;
-  line-height: 1.35;
+  line-height: 1.34;
+}
+
+#page {
+  box-sizing: border-box;
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 34px 50px 32px;
+  background: #ffffff;
 }
 
 a {
@@ -25,8 +29,8 @@ a:hover {
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 0.8em;
+  margin: 0 0 0.8em;
+  padding: 0;
 }
 
 h1, h2, h3 {
@@ -34,54 +38,64 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-h1 {
-  font-size: 1.9rem;
-  line-height: 1.15;
+#toptitle h1 {
   margin: 0 0 10px;
+  padding: 0;
+  border: none;
+  font-size: 1.92rem;
+  line-height: 1.08;
+}
+
+.cn {
+  font-size: 0.84em;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 1.28rem;
-  line-height: 1.15;
-  margin: 22px 0 10px;
+  margin: 20px 0 10px;
   padding: 0 0 4px;
   border-bottom: 1px solid #aaaaaa;
+  font-size: 1.25rem;
+  line-height: 1.05;
 }
 
 h3 {
-  font-size: 1.05rem;
   margin: 0 0 8px;
+  padding: 0;
+  font-size: 1.04rem;
+  line-height: 1.2;
 }
 
-.profile-table,
-.pub-table {
+.top-table {
   width: 100%;
-  border-collapse: collapse;
   border: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
 }
 
-.profile-table td,
-.pub-table td {
+.top-table td {
   border: 0;
   vertical-align: top;
+  padding: 0;
 }
 
-.profile-info {
-  padding-right: 28px;
+.top-info {
+  width: auto;
+  padding-right: 34px !important;
 }
 
-.profile-photo-cell {
-  width: 205px;
+.top-photo {
+  width: 200px;
   text-align: right;
 }
 
-.profile-photo {
+.top-photo img {
   width: 190px;
   height: 190px;
   object-fit: cover;
+  border: 0;
   display: block;
   margin-left: auto;
-  border: 0;
 }
 
 .news-box {
@@ -92,138 +106,70 @@ h3 {
   background: #fafafa;
 }
 
-.plain-list {
+.news-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.plain-list li {
-  margin: 0.3em 0;
+.news-list li {
+  margin: 0.25em 0;
 }
 
 ul {
-  margin-top: 0.25em;
-  margin-bottom: 0.9em;
-  padding-left: 1.4em;
+  margin: 0.25em 0 0.9em;
+  padding-left: 1.35em;
 }
 
 li {
-  margin: 0.42em 0;
+  margin: 0.45em 0;
 }
 
-.pub-table {
-  margin-top: 6px;
+.publication {
+  margin: 0 0 16px;
+  padding: 0;
 }
 
-.pub-image-cell {
-  width: 255px;
-  padding-right: 22px;
+.publication p {
+  margin-bottom: 0.38em;
 }
 
-.pub-text-cell {
-  padding-top: 1px;
-}
-
-.pub-text-cell p {
-  margin-bottom: 0.42em;
-}
-
-.pub-title {
-  font-size: 1.03rem;
+.paper-title {
+  font-size: 1.02rem;
   line-height: 1.35;
 }
 
-.paper-placeholder {
-  width: 235px;
-  min-height: 145px;
-  border: 1px solid #cccccc;
-  background: #fafafa;
-  padding: 16px 14px;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 7px;
-}
-
-.camera-row {
-  display: table;
-  width: 100%;
-  border-spacing: 5px 0;
-  table-layout: fixed;
-}
-
-.camera-row span {
-  display: table-cell;
-  text-align: center;
-  border: 1px solid #bbbbbb;
-  background: #ffffff;
-  padding: 7px 2px;
-  font-size: 0.72rem;
-}
-
-.paper-flow {
-  text-align: center;
-  font-size: 0.76rem;
-  color: #555555;
-  margin-top: 5px;
-}
-
-.footer {
-  margin-top: 36px;
+#footer {
+  margin-top: 38px;
   padding-top: 7px;
   border-top: 1px solid #c0c0c0;
-  color: #999999;
+  color: #aaaaaa;
   font-size: 0.82rem;
 }
 
-@media (max-width: 720px) {
-  html {
-    background: #ffffff;
-  }
-
-  body {
+@media (max-width: 700px) {
+  html { background: #ffffff; }
+  #page {
     margin: 0;
-    padding: 24px 20px 32px;
+    padding: 24px 20px 30px;
     max-width: none;
   }
-
-  .profile-table,
-  .profile-table tbody,
-  .profile-table tr,
-  .profile-table td,
-  .pub-table,
-  .pub-table tbody,
-  .pub-table tr,
-  .pub-table td {
+  .top-table,
+  .top-table tbody,
+  .top-table tr,
+  .top-table td {
     display: block;
     width: 100%;
   }
-
-  .profile-info {
-    padding-right: 0;
-  }
-
-  .profile-photo-cell {
+  .top-info { padding-right: 0 !important; }
+  .top-photo {
     text-align: left;
     margin-top: 14px;
   }
-
-  .profile-photo {
+  .top-photo img {
     width: 160px;
     height: 160px;
     margin: 0;
   }
-
-  .pub-image-cell {
-    padding-right: 0;
-    margin-bottom: 14px;
-  }
-
-  .paper-placeholder {
-    width: 100%;
-    max-width: 300px;
-  }
+  #toptitle h1 { font-size: 1.75rem; }
 }
