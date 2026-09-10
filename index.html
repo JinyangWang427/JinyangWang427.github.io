@@ -76,7 +76,7 @@
   </p>
 
   <h2>News</h2>
-  <div class="scroll-box news-scroll">
+  <div class="news-box">
     <ul class="news-list">
       <li><em>2026.09:</em> Our work <strong>SV-WAM</strong> is available on arXiv.</li>
       <li><em>2026.07:</em> Finished my internship at <strong>Changan Auto</strong>, working on autonomous-driving world models.</li>
@@ -86,53 +86,49 @@
   </div>
 
   <h2>Internship</h2>
-  <div class="scroll-box internship-scroll">
-    <div class="entry-card">
-      <div class="entry-head">
-        <span class="entry-title"><strong>Autonomous Driving Algorithm Intern · Changan Auto</strong></span>
-        <span class="entry-date">2026.01 — 2026.07</span>
-      </div>
-      <p class="entry-sub">Multi-View World Models · RGB-LiDAR Streaming Generation</p>
-      <div class="tag-row">
-        <span class="tag">DiT</span><span class="tag">Cross-View Attention</span><span class="tag">RGB-LiDAR</span><span class="tag">Distributed Training</span>
-      </div>
-      <ul>
-        <li>Contributed to a pose-controllable multi-modal driving world model based on <strong>Wan2.1 DiT</strong>, extending the six-camera data organization, unified latent layout, and multi-view generation pipeline; designed ring-style local cross-view attention that reduced allowed cross-view Q-K connections by <strong>50%</strong>.</li>
-        <li>Built geometric-consistency conditioning with a front-view <strong>Plücker Ray Map</strong> and <strong>Epipolar-Masked Attention</strong>, improving VSC from <strong>0.771 to 0.830</strong> and reducing DAS from <strong>2.41 m to 2.19 m</strong>.</li>
-        <li>Adapted <strong>24-way Attention Sequence Parallel</strong> and view-parallel VAE encoding, increasing the maximum training length from <strong>113 to 381 frames</strong>; also contributed to DMD Distillation, Self-Forcing, and Temporal-Decay KV Cache for approximately <strong>10 Hz</strong> long-horizon RGB-LiDAR streaming generation.</li>
-      </ul>
+  <div class="entry-card">
+    <div class="entry-head">
+      <span class="entry-title"><strong>Autonomous Driving Algorithm Intern · Changan Auto</strong></span>
+      <span class="entry-date">2026.01 — 2026.07</span>
     </div>
+    <p class="entry-sub">Multi-View World Models · RGB-LiDAR Streaming Generation</p>
+    <div class="tag-row">
+      <span class="tag">DiT</span><span class="tag">Cross-View Attention</span><span class="tag">RGB-LiDAR</span><span class="tag">Distributed Training</span>
+    </div>
+    <ul>
+      <li>Contributed to a pose-controllable multi-modal driving world model based on <strong>Wan2.1 DiT</strong>, extending the six-camera data organization, unified latent layout, and multi-view generation pipeline; designed ring-style local cross-view attention that reduced allowed cross-view Q-K connections by <strong>50%</strong>.</li>
+      <li>Built geometric-consistency conditioning with a front-view <strong>Plücker Ray Map</strong> and <strong>Epipolar-Masked Attention</strong>, improving VSC from <strong>0.771 to 0.830</strong> and reducing DAS from <strong>2.41 m to 2.19 m</strong>.</li>
+      <li>Adapted <strong>24-way Attention Sequence Parallel</strong> and view-parallel VAE encoding, increasing the maximum training length from <strong>113 to 381 frames</strong>; also contributed to DMD Distillation, Self-Forcing, and Temporal-Decay KV Cache for approximately <strong>10 Hz</strong> long-horizon RGB-LiDAR streaming generation.</li>
+    </ul>
+  </div>
 
-    <div class="entry-card">
-      <div class="entry-head">
-        <span class="entry-title"><strong>Robot Vision Algorithm Intern · CASIA</strong></span>
-        <span class="entry-date">2024.10 — 2025.06</span>
-      </div>
-      <p class="entry-sub">Vision-Language Navigation · 3D Reconstruction · Robot Deployment</p>
-      <div class="tag-row">
-        <span class="tag">VLN</span><span class="tag">World Models</span><span class="tag">VGGT</span><span class="tag">DUSt3R</span>
-      </div>
-      <ul>
-        <li>Built a generative world-model-driven navigation pipeline from <strong>natural-language instruction → target-scene generation → trajectory recovery → real-observation refinement</strong>, combining LLM and world-model priors for robot goal localization and navigation decision making.</li>
-        <li>Reproduced and integrated <strong>DUSt3R</strong> and <strong>VGGT</strong> for multi-view reconstruction, including camera-pose estimation, dense point-cloud reconstruction, and scale calibration; completed <strong>500+</strong> image-processing annotations and participated in embedded deployment and unmanned-robot system integration.</li>
-      </ul>
+  <div class="entry-card">
+    <div class="entry-head">
+      <span class="entry-title"><strong>Robot Vision Algorithm Intern · CASIA</strong></span>
+      <span class="entry-date">2024.10 — 2025.06</span>
     </div>
+    <p class="entry-sub">Vision-Language Navigation · 3D Reconstruction · Robot Deployment</p>
+    <div class="tag-row">
+      <span class="tag">VLN</span><span class="tag">World Models</span><span class="tag">VGGT</span><span class="tag">DUSt3R</span>
+    </div>
+    <ul>
+      <li>Built a generative world-model-driven navigation pipeline from <strong>natural-language instruction → target-scene generation → trajectory recovery → real-observation refinement</strong>, combining LLM and world-model priors for robot goal localization and navigation decision making.</li>
+      <li>Reproduced and integrated <strong>DUSt3R</strong> and <strong>VGGT</strong> for multi-view reconstruction, including camera-pose estimation, dense point-cloud reconstruction, and scale calibration; completed <strong>500+</strong> image-processing annotations and participated in embedded deployment and unmanned-robot system integration.</li>
+    </ul>
   </div>
 
   <h2>Selected Publications</h2>
-  <div class="scroll-box publication-scroll">
-    <div class="publication">
-      <div class="pub-year">2026</div>
-      <div class="pub-body">
-        <p class="paper-title"><strong>SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving</strong></p>
-        <p><strong>Jinyang Wang</strong>, Shiwei Li, Junjian Wang, et al.</p>
-        <p><em>arXiv preprint, 2026.</em></p>
-        <p>
-          An efficient surround-view world-action model that preserves full six-camera observations while leveraging
-          future-video prediction only as training supervision, enabling efficient action-only planning without future-video rollout at inference.
-        </p>
-        <p class="paper-links"><a href="https://arxiv.org/abs/2609.03602" target="_blank" rel="noopener">[Paper]</a></p>
-      </div>
+  <div class="publication">
+    <div class="pub-year">2026</div>
+    <div class="pub-body">
+      <p class="paper-title"><strong>SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving</strong></p>
+      <p><strong>Jinyang Wang</strong>, Shiwei Li, Junjian Wang, et al.</p>
+      <p><em>arXiv preprint, 2026.</em></p>
+      <p>
+        An efficient surround-view world-action model that preserves full six-camera observations while leveraging
+        future-video prediction only as training supervision, enabling efficient action-only planning without future-video rollout at inference.
+      </p>
+      <p class="paper-links"><a href="https://arxiv.org/abs/2609.03602" target="_blank" rel="noopener">[Paper]</a></p>
     </div>
   </div>
 
