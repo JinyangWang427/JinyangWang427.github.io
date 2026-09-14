@@ -88,17 +88,18 @@
   <h2>Internship</h2>
   <div class="entry-card">
     <div class="entry-head">
-      <span class="entry-title"><strong>Autonomous Driving Algorithm Intern · Changan Auto</strong></span>
+      <span class="entry-title"><strong>Multi-View Video Generation & World Models · Changan Auto</strong></span>
       <span class="entry-date">2026.01 — 2026.07</span>
     </div>
-    <p class="entry-sub">Multi-View World Models · RGB-LiDAR Streaming Generation</p>
+    <p class="entry-sub">Autonomous Driving Algorithm Intern · Wan2.1 DiT · 6-Camera Video Generation · RGB-LiDAR Streaming</p>
     <div class="tag-row">
-      <span class="tag">DiT</span><span class="tag">Cross-View Attention</span><span class="tag">RGB-LiDAR</span><span class="tag">Distributed Training</span>
+      <span class="tag">Video Generation</span><span class="tag">World Models</span><span class="tag">DiT</span><span class="tag">DMD / Self-Forcing</span>
     </div>
     <ul>
-      <li>Contributed to a pose-controllable multi-modal driving world model based on <strong>Wan2.1 DiT</strong>, extending the six-camera data organization, unified latent layout, and multi-view generation pipeline; designed ring-style local cross-view attention that reduced allowed cross-view Q-K connections by <strong>50%</strong>.</li>
-      <li>Built geometric-consistency conditioning with a front-view <strong>Plücker Ray Map</strong> and <strong>Epipolar-Masked Attention</strong>, improving VSC from <strong>0.771 to 0.830</strong> and reducing DAS from <strong>2.41 m to 2.19 m</strong>.</li>
-      <li>Adapted <strong>24-way Attention Sequence Parallel</strong> and view-parallel VAE encoding, increasing the maximum training length from <strong>113 to 381 frames</strong>; also contributed to DMD Distillation, Self-Forcing, and Temporal-Decay KV Cache for approximately <strong>10 Hz</strong> long-horizon RGB-LiDAR streaming generation.</li>
+      <li><strong>Multi-view video generation.</strong> Owned the six-camera branch of a pose-controllable driving world model based on <strong>Wan2.1 DiT</strong>, extending the data pipeline, unified latent layout, and synchronized surround-view generation; designed ring-style local <strong>Cross-View Attention</strong>, reducing allowed cross-view Q-K connections by <strong>50%</strong>.</li>
+      <li><strong>Geometric consistency.</strong> Designed a front-view <strong>Plücker Ray Map</strong> and <strong>Epipolar-Masked Attention</strong> for cross-view and RGB-LiDAR token interaction, improving VSC from <strong>0.771 to 0.830</strong> and reducing DAS from <strong>2.41 m to 2.19 m</strong>.</li>
+      <li><strong>Long-context training.</strong> Adapted <strong>24-way Attention Sequence Parallel</strong>, view-sharded VAE encoding, latent-level aggregation, and pre-sharded Plücker conditioning, increasing the maximum training length from <strong>113 to 381 frames</strong>.</li>
+      <li><strong>Real-time world generation.</strong> Contributed to the <strong>DMD Distillation, Self-Forcing, and Temporal-Decay KV Cache</strong> pipeline, helping the system reach approximately <strong>10 Hz RGB-LiDAR streaming generation</strong> with long-horizon rollouts beyond <strong>240 frames</strong>.</li>
     </ul>
   </div>
 
