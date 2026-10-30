@@ -23,17 +23,6 @@ The project page and qualitative demos are available now. This public branch con
 | Training and inference code | **Coming Soon** |
 | Model checkpoints | **Coming Soon** |
 
-## Contributors
-
-Website preparation credit (requested attribution, **not GitHub's commit-based contributor statistics**):
-
-| Contributor | Share |
-| :--- | ---: |
-| [Codex](https://openai.com/codex/) | **99%** |
-| [Jinyang Wang](https://github.com/JinyangWang427) | **1%** |
-
-These percentages describe the requested project-page production credit, not the authorship of the SV-WAM research paper or independently measured GitHub commits.
-
 ---
 
 For updates, refer to the [SV-WAM project page](https://jinyangwang427.github.io/SV-WAM/).
