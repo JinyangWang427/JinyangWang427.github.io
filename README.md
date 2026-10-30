@@ -1,22 +1,39 @@
-# SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving
+<div align="center">
 
-**Code Coming Soon**
+# SV-WAM
 
-Thank you for your interest in **SV-WAM**. This public placeholder contains **no training source code, model checkpoints, datasets, or private project files**.
+### An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving
 
-We plan to release the implementation and additional resources after the public release is ready.
+[**Project Page**](https://jinyangwang427.github.io/SV-WAM/) · [**Paper**](https://arxiv.org/abs/2609.03602) · [**PDF**](https://arxiv.org/pdf/2609.03602)
 
-- **[Project Page](https://jinyangwang427.github.io/SV-WAM/)**
-- **[Paper (arXiv)](https://arxiv.org/abs/2609.03602)**
-- **[PDF](https://arxiv.org/pdf/2609.03602)**
+## 🚧 Code Coming Soon
+
+**The SV-WAM implementation and model checkpoints will be released here after preparation.**
+
+The project page and qualitative demos are available now. This public branch contains only the project README; it does **not** publish the private training or inference code.
+
+</div>
 
 ## Release Status
 
 | Resource | Status |
-| --- | --- |
-| Paper | Available |
-| Project page and demonstrations | Available |
-| Training & inference code | Coming soon |
-| Model checkpoints | Coming soon |
+| :--- | :--- |
+| Paper | [Available](https://arxiv.org/abs/2609.03602) |
+| [Project Page](https://jinyangwang427.github.io/SV-WAM/) and visualizations | Available |
+| Training and inference code | **Coming Soon** |
+| Model checkpoints | **Coming Soon** |
 
-> This is a temporary public README-only branch used for the Code button. A dedicated standalone public repository will replace it later. No code has been made public by this branch.
+## Contributors
+
+Website preparation credit (requested attribution, **not GitHub's commit-based contributor statistics**):
+
+| Contributor | Share |
+| :--- | ---: |
+| [Codex](https://openai.com/codex/) | **99%** |
+| [Jinyang Wang](https://github.com/JinyangWang427) | **1%** |
+
+These percentages describe the requested project-page production credit, not the authorship of the SV-WAM research paper or independently measured GitHub commits.
+
+---
+
+For updates, refer to the [SV-WAM project page](https://jinyangwang427.github.io/SV-WAM/).
